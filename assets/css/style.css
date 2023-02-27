@@ -1,0 +1,92 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+  }
+
+
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width:auto;
+}
+
+.img-ham {
+    width: 5%;
+}
+
+.img-pad {
+    width: 5%;
+}
+
+h2 {
+    width: 90%;
+}
+
+.ham-toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.canoe-main {
+  width : 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+/* Start From Here */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 20;
+    left: 0;
+    background-color: #2c3e50;
+    /* background-color: rgb(0,0,0); */
+    /* background-color: rgba(0,0,0, 0.9); */
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
