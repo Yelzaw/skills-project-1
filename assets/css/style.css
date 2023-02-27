@@ -3,7 +3,7 @@ body {
     font-weight: 400;
   }
 
-
+/* Top nav bar style */
 .navbar {
     background-color: #2c3e50;
     color: white;
@@ -12,17 +12,20 @@ body {
     text-align: center;
     width:auto;
 }
-
+/* Hamburger style*/
 .img-ham {
     width: 5%;
 }
-
+/* Logo style*/
 .img-pad {
     width: 5%;
 }
-
-h2 {
+/* Top title*/
+.top-title {
     width: 90%;
+    font-size: 20px;
+    
+    text-shadow: 2px 2px grey;
 }
 
 .ham-toggle {
@@ -30,16 +33,45 @@ h2 {
     flex-direction: column;
 }
 
-.canoe-main {
+/* Main section style*/
+main{
   width : 80%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+/* Set Canoe JPG same width with main*/
+.canoe-main {
+  width : 100%;
+}
+/* All h1 text style*/
+h1 {
+  text-align: center;
+  font-size: 70px;
+  border-bottom-style: groove;
+}
 
+/* Text style centered on image*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
-/* Start From Here */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
 
+h2{
+  color: green;
+  text-decoration: underline;
+}
+
+/*Menu Overlay function*/
 .overlay {
     height: 100%;
     width: 0;
@@ -80,6 +112,29 @@ h2 {
     top: 20px;
     right: 45px;
     font-size: 60px;
+  }
+  @media screen and (max-width: 1200px) {
+    main{
+      width:100%;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+    .canoe-main {
+      width : 100%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+  .centered {
+    font-size: 30px;
+  }
+
+  section {
+    font-size: 90%;
+  }
   }
   
   @media screen and (max-height: 450px) {

@@ -8,12 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
         <div class="navbar">
             <img class="img-ham open-btn" src="./assets/images/hamburger.png" alt="hamburger-toggle"></img>
-            <h2>Halifax Canoe and Kayak</h2>
+            <p class="top-title">Halifax Canoe and Kayak</p>
             <img class="img-pad" src="./assets/images/paddle-white.png" alt="hamburger-toggle">
         </div>
+        <!-- Menu  -->
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" >&times;</a>
             <div class="overlay-content">
@@ -23,15 +25,40 @@
             </div>
           </div>
     </header>
-    <main>
-        <img class="canoe-main" src="./assets/images/canoe.jpg" alt="canoe">
+    <main >
+        <!-- Image of Canoe with text overlay -->
+        <div class="container">
+            <img class="canoe-main" src="./assets/images/canoe.jpg" alt="canoe">
+            <div class="centered">Come Expirence Canada</div>
+        </div>        
+        <h1>Upcoming Adventures</h1>
         <section>
+            <h2>Halifax</h2>
+            <p>Date: 2017-04-12</p>
+            <p>Duration: 4 days</p>            
+            <h4>Summary</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores consequuntur sint rem ea fugiat, fugit, esse sapiente fuga ipsam quae, quod nisi cupiditate possimus nesciunt. Incidunt error dolorum magnam.</p>
+            <br>
+            <h2>Sydney</h2>
+            <p>Date: 2017-04-12</p>
+            <p>Duration: 2 days</p>
+            <h4>Summary</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores consequuntur sint rem ea fugiat, fugit, esse sapiente fuga ipsam quae, quod nisi cupiditate possimus nesciunt. Incidunt error dolorum magnam.</p>
             
         </section>
     </main>
 
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script type="text/javascript">
+        // Open Menu
+        $('.open-btn').click(function(){
+            $(".open-btn").parents().next("#myNav").css("width","25%");
+        })
+        // Close Menu 
+        $('.closebtn').click(function(){
+            $("#myNav").css("width","0%");
+        })
+    </script>
 </body>
 </html>
